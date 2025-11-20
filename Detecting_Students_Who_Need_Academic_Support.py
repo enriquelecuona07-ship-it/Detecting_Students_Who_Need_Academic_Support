@@ -1,3 +1,7 @@
+grades = [5, 4, 6, 7, 2, 10]
+
+name = "Enrique"
+
 def calculate_average(grades):
     """Calculates the average of a list of grades."""
     if not grades:
@@ -31,4 +35,6 @@ def assess_student(name, grades):
     else:
         risk = "Performing Well"
 
-    return f"{name}: promedio={average}, suspensos={failures}, riesgo={risk}"
+    return f"{name}: average={average}, failures={failures}, risk={risk}"
+x = assess_student(name, grades)
+print(x)
