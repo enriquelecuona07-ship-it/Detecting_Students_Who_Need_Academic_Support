@@ -8,7 +8,11 @@ def calculate_average(grades):
 def count_failures(grades):
     """Counts how many grades are below the passing grade (5)."""
     passing = 5
-    return sum(1 for g in grades if g < passing)
+    counting = 0
+    for g in grades:
+        if g < passing:
+            counting += 1
+    return counting
 
 
 def assess_student(name, grades):
